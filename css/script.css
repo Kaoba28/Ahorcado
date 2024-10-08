@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e5e7eb; /* gris claro */
+    font-family: 'Arial', sans-serif;
+    color: #374151; /* gris oscuro */
+    margin: 0;
+}
+h1 {
+    margin-bottom: 5px; /* Reducción del margen inferior */
+    font-size: 2.5em;
+    text-align: center;
+    color: #3b82f6; /* azul */
+}
+#hangman-container {
+    margin: 20px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.button, .letter-button {
+    padding: 10px 15px;
+    background-color: #3b82f6; /* azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    margin: 5px;
+}
+.button:hover, .letter-button:hover {
+    background-color: #2563eb; /* azul oscuro */
+}
+.letter-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+}
+.game-over {
+    color: #dc2626; /* rojo */
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+#remaining-attempts {
+    font-size: 1.2em;
+    margin: 10px;
+}
+.animate-swing {
+    animation: swing 2s ease-in-out infinite;
+    transform-origin: center top;
+}
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #3b82f6; /* azul */
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+    font-size: 1em;
+}
+input[type="text"]:focus {
+    border-color: #2563eb; /* azul oscuro */
+}
+#letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 350px;
+    margin: 20px auto;
+}
+#word-display {
+    font-size: 2em;
+    margin: 10px;
+}
+#reset-game-container {
+    display: flex;
+    justify-content: center; /* Asegura que el botón esté centrado */
+    margin-top: 20px;
+}
+#player-name-display {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #2563eb;
+}
