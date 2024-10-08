@@ -34,7 +34,7 @@ h1 {
     margin: 5px;
 }
 .button:hover, .letter-button:hover {
-    background-color: #2563eb; /* azul oscuro */
+    background-color: #008000; /* azul oscuro */
 }
 .letter-button {
     width: 40px;
@@ -73,7 +73,7 @@ input[type="text"] {
     font-size: 1em;
 }
 input[type="text"]:focus {
-    border-color: #2563eb; /* azul oscuro */
+    border-color: #008000; /* azul oscuro */
 }
 #letters-container {
     display: flex;
@@ -94,5 +94,5 @@ input[type="text"]:focus {
 #player-name-display {
     font-size: 1.5em;
     margin-top: 10px;
-    color: #2563eb;
+    color: #008000;
 }
